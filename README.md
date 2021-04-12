@@ -1,1 +1,1 @@
-# Get-your-Bachelors
+# Get your Bachelor's
