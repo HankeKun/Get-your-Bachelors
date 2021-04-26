@@ -43,6 +43,10 @@ public class PlayerMovement : MonoBehaviour
                 animator.SetFloat("Vertical", movement.y);
             }
             animator.SetFloat("Speed", movement.sqrMagnitude);
+        } 
+        else 
+        {
+            animator.SetFloat("Speed", 0f);
         }
     }
 

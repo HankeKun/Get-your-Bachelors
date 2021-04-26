@@ -7,6 +7,8 @@ public class Sign1 : MonoBehaviour
     public GameObject dialogBox;
     private bool playerInRange;
     public PlayerMovement playerMovement;
+    public Animator animator;
+    public GameObject keyEnter;
 
     // Update is called once per frame
     void Update()
@@ -16,11 +18,13 @@ public class Sign1 : MonoBehaviour
             if(dialogBox.activeInHierarchy)
             {
                 dialogBox.SetActive(false);
+                keyEnter.SetActive(true);
                 playerMovement.pState = PlayerState.walk;
             }
             else
             {
                 dialogBox.SetActive(true);
+                keyEnter.SetActive(false);
                 playerMovement.pState = PlayerState.interact;
             }
         }
@@ -31,6 +35,7 @@ public class Sign1 : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInRange = true;
+            keyEnter.SetActive(true);
         }
     }
 
@@ -39,6 +44,7 @@ public class Sign1 : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInRange = false;
+            keyEnter.SetActive(false);
         }
     }
 }
