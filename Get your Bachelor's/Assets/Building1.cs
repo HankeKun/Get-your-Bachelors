@@ -6,17 +6,14 @@ public class Building1 : MonoBehaviour
 {
     private bool playerInRange;
     public GameObject keyEnter;
-    public Grid overworld;
-    public Grid building;
-    public Transform transform;
+    public LevelLoader levelLoader;
 
     // Update is called once per frame
     void Update()
     {
         if(playerInRange && Input.GetKeyDown(KeyCode.E))
         {
-            overworld.gameObject.SetActive(false);
-            building.gameObject.SetActive(true);
+            levelLoader.whereToGo = 2;
         }
     }
 

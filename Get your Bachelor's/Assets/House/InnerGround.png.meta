@@ -41,6 +41,12 @@ TextureImporter:
   - first:
       213: -6786015944514073666
     second: InnerGround_14
+  - first:
+      213: 8692133894010609019
+    second: InnerGround_11
+  - first:
+      213: 7866940114500335315
+    second: InnerGround_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -394,6 +400,48 @@ TextureImporter:
       bones: []
       spriteID: ebb0a1bc37a33d1a0800000000000000
       internalID: -6786015944514073666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerGround_11
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 45
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7d92a449b9a0a870800000000000000
+      internalID: 8692133894010609019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerGround_15
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 10
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d630127a5cfc2d60800000000000000
+      internalID: 7866940114500335315
       vertices: []
       indices: 
       edges: []
