@@ -15,10 +15,12 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
     Vector2 movement;
     public PlayerState pState;
+    public VectorValue startingPosition;
 
     void Start()
     {
         pState = PlayerState.walk;
+        transform.position = startingPosition.initialValue;
     }
     // Update is called once per frame
     void Update()

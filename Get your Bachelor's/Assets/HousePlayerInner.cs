@@ -2,18 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Building1 : MonoBehaviour
+public class HousePlayerInner : MonoBehaviour
 {
     private bool playerInRange;
     public GameObject keyEnter;
     public LevelLoader levelLoader;
+    public Rigidbody2D player;
 
     // Update is called once per frame
     void Update()
     {
         if(playerInRange && Input.GetKeyDown(KeyCode.E))
         {
-            //levelLoader.whereToGo = 2;
+            levelLoader.whereToGo = 1;
         }
     }
 
