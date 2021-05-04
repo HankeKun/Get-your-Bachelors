@@ -29,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
         {
             movement.x = Input.GetAxisRaw("Horizontal");
             movement.y = Input.GetAxisRaw("Vertical");
+            movement = movement.normalized;
 
             if (Input.GetKey(KeyCode.LeftShift))
             {
