@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
     
-    //let camera follow target
+//let camera follow target
 public class CameraFollow : MonoBehaviour
 {
     public Transform target;
@@ -11,30 +11,26 @@ public class CameraFollow : MonoBehaviour
     public Vector2 maxPos;
     public Vector2 minPos;
 
-    private void Start()
+    void Start()
     {
-        transform.position = GetClampedCameraPosition();
+        Vector3 targetPosition = new Vector3(
+            target.position.x,
+            target.position.y,
+            transform.position.z
+        );
+        transform.position = targetPosition;
     }
 
-    private void FixedUpdate()
-    {
-        if (transform.position != target.position)
-        {
-            transform.position = Vector3.Lerp(transform.position, GetClampedCameraPosition(), smoothing);
-        }
-    }
-
-    private Vector3 GetClampedCameraPosition()
+    void FixedUpdate()
     {
         Vector3 targetPosition = new Vector3(
                 target.position.x,
                 target.position.y,
                 transform.position.z
             );
-
         targetPosition.x = Mathf.Clamp(targetPosition.x, minPos.x, maxPos.x);
         targetPosition.y = Mathf.Clamp(targetPosition.y, minPos.y, maxPos.y);
-
-        return targetPosition;
+                    
+        transform.position = Vector3.Lerp(transform.position, targetPosition, smoothing);
     }
 }
