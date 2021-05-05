@@ -10,13 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
-  m_Name: Water
+  m_Name: Water_Flow
   m_EditorClassIdentifier: 
   m_AnimatedSprites:
   - {fileID: 21300000, guid: d8e23f6ebc486ab4ca2a0143b86e8547, type: 3}
   - {fileID: 21300000, guid: 3a3623480902d6149b6a1629361ecd33, type: 3}
   - {fileID: 21300000, guid: ecfc209f57c302647b73ac5f0eb8a59b, type: 3}
   - {fileID: 21300000, guid: b8322d9cf14a2f448a8813a854604ccb, type: 3}
+  - {fileID: 21300000, guid: 350c44689e7de8a42853d1bc40c50bf9, type: 3}
+  - {fileID: 21300000, guid: 599f658864653454b8738b47a5d457cb, type: 3}
+  - {fileID: 21300000, guid: e9d12cd1f3116fe4cbbee9874113536e, type: 3}
+  - {fileID: 21300000, guid: d032fec96f5fd634d9223a4b2b90106d, type: 3}
   m_MinSpeed: 1
   m_MaxSpeed: 1
   m_AnimationStartTime: 0
