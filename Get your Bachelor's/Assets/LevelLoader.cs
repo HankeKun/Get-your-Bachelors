@@ -23,6 +23,10 @@ public class LevelLoader : MonoBehaviour
                 playerStorage.initialValue = playerPosition;
                 LoadNextLevel(2);
                 break;
+            case 3:
+                playerStorage.initialValue = playerPosition;
+                LoadNextLevel(3);
+                break;
             default:
                 break;
         }

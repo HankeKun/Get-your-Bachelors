@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/House of Player.unity
     guid: 651249a814d60274fa25acd219ec8eac
+  - enabled: 1
+    path: Assets/Scenes/Building 0.unity
+    guid: 568bd80f4ab8fae4ba84c431d6046471
   m_configObjects: {}

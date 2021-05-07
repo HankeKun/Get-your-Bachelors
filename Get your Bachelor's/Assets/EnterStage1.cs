@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Building1 : MonoBehaviour
+public class EnterStage1 : MonoBehaviour
 {
     private bool playerInRange;
-    public GameObject keyEnter;
     public LevelLoader levelLoader;
 
     // Update is called once per frame
     void Update()
     {
-        if(playerInRange && Input.GetKeyDown(KeyCode.E))
+        if(playerInRange)
         {
-            levelLoader.whereToGo = 3;
+            //levelLoader.whereToGo = 3;
+            Debug.Log("Enter Stairs");
         }
     }
 
@@ -22,7 +22,6 @@ public class Building1 : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInRange = true;
-            keyEnter.SetActive(true);
         }
     }
 
@@ -31,7 +30,6 @@ public class Building1 : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInRange = false;
-            keyEnter.SetActive(false);
         }
     }
 }
