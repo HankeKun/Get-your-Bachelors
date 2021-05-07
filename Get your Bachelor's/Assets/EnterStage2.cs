@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnterStage1 : MonoBehaviour
+public class EnterStage2 : MonoBehaviour
 {
     private bool playerInRange;
     public LevelLoader levelLoader;
@@ -16,8 +16,8 @@ public class EnterStage1 : MonoBehaviour
         if(playerInRange)
         {
             gridStage0.gameObject.SetActive(false);
-            gridStage1.gameObject.SetActive(true);
-            gridStage2.gameObject.SetActive(false);
+            gridStage1.gameObject.SetActive(false);
+            gridStage2.gameObject.SetActive(true);
         }
     }
 

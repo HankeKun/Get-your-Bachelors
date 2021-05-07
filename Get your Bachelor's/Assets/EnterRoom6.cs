@@ -2,22 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnterStage1 : MonoBehaviour
+public class EnterRoom6 : MonoBehaviour
 {
     private bool playerInRange;
+    public GameObject keyEnter;
     public LevelLoader levelLoader;
-    public Grid gridStage0;
-    public Grid gridStage1;
-    public Grid gridStage2;
 
     // Update is called once per frame
     void Update()
     {
-        if(playerInRange)
+        if(playerInRange && Input.GetKeyDown(KeyCode.E))
         {
-            gridStage0.gameObject.SetActive(false);
-            gridStage1.gameObject.SetActive(true);
-            gridStage2.gameObject.SetActive(false);
+            //levelLoader.whereToGo = 3;
         }
     }
 
@@ -26,6 +22,7 @@ public class EnterStage1 : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInRange = true;
+            keyEnter.SetActive(true);
         }
     }
 
@@ -34,6 +31,7 @@ public class EnterStage1 : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInRange = false;
+            keyEnter.SetActive(false);
         }
     }
 }
