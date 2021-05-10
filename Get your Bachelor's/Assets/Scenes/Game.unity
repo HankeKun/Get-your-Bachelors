@@ -8401,7 +8401,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: BuildingTH wide
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 2375210879242788068, guid: e418b4301c55a0340bb3e9891ae0b40e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 2375210879242788071, guid: e418b4301c55a0340bb3e9891ae0b40e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2375210878860802865, guid: e418b4301c55a0340bb3e9891ae0b40e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e418b4301c55a0340bb3e9891ae0b40e, type: 3}
 --- !u!4 &303625987 stripped
 Transform:
@@ -8409,6 +8420,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 303625986}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &303625988 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2375210878860802879, guid: e418b4301c55a0340bb3e9891ae0b40e,
+    type: 3}
+  m_PrefabInstance: {fileID: 303625986}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &303625989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303625988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f143015a15d53048b09a9554b79c51c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyEnter: {fileID: 687120541}
+  levelLoader: {fileID: 1765625902}
 --- !u!4 &333790011 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1208170079316682036, guid: e5a11f7103feb0c43bf280b6410b7ae0,
@@ -83480,6 +83511,12 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &687120541 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2375210879242788071, guid: e418b4301c55a0340bb3e9891ae0b40e,
+    type: 3}
+  m_PrefabInstance: {fileID: 303625986}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &799652977
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -86719,6 +86756,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BuildingTH
       objectReference: {fileID: 0}
+    - target: {fileID: 2375210879242788071, guid: e418b4301c55a0340bb3e9891ae0b40e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e418b4301c55a0340bb3e9891ae0b40e, type: 3}
 --- !u!1001 &3333489383583531071
@@ -87024,12 +87066,12 @@ PrefabInstance:
     - target: {fileID: 7029182531418026328, guid: 848919c902d24e54d94527ccf093c234,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8
+      value: -28
       objectReference: {fileID: 0}
     - target: {fileID: 7029182531418026328, guid: 848919c902d24e54d94527ccf093c234,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 21.2
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 7029182531418026328, guid: 848919c902d24e54d94527ccf093c234,
         type: 3}

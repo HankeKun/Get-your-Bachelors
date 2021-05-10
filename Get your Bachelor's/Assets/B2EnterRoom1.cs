@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Building2 : MonoBehaviour
+public class B2EnterRoom1 : MonoBehaviour
 {
     private bool playerInRange;
     public GameObject keyEnter;
@@ -13,7 +13,7 @@ public class Building2 : MonoBehaviour
     {
         if(playerInRange && Input.GetKeyDown(KeyCode.E))
         {
-            levelLoader.whereToGo = 4;
+            //levelLoader.whereToGo = 3;
         }
     }
 
