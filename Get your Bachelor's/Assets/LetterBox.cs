@@ -2,18 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnterRoom1 : MonoBehaviour
+public class LetterBox : MonoBehaviour
 {
     private bool playerInRange;
     public GameObject keyEnter;
-    public LevelLoader levelLoader;
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
 
     // Update is called once per frame
     void Update()
     {
         if(playerInRange && Input.GetKeyDown(KeyCode.E))
         {
-            levelLoader.whereToGo = 6;
+            //Get letter
         }
     }
 
