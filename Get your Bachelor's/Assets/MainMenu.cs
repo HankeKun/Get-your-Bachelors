@@ -8,6 +8,7 @@ public class MainMenu : MonoBehaviour
     public VectorValue playerStorage;
     public void PlayGame()
     {
+        PlayerPrefs.SetInt("QuestState", 1);
         playerStorage.initialValue =  new Vector2(0, 0);
         SceneManager.LoadScene(2);
     }
