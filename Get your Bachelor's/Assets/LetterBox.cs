@@ -8,7 +8,8 @@ public class LetterBox : MonoBehaviour
     public GameObject keyEnter;
     public Sprite post;
     public Sprite noPost;
-    public GameObject text;
+    public GameObject textOneLetter;
+    public GameObject textNoLetter;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,9 +33,9 @@ public class LetterBox : MonoBehaviour
         {
             if (PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQestState.Quest1) {
                 PlayerPrefs.SetInt("QuestState", (int) Player.PlayerQestState.Quest2);
-                StartCoroutine(GetLetterCoroutine());
+                StartCoroutine(GetLetterCoroutine(textOneLetter));
             } else {
-                Debug.Log("Lol");
+                StartCoroutine(GetLetterCoroutine(textNoLetter));
             }
         }
     }
@@ -57,7 +58,7 @@ public class LetterBox : MonoBehaviour
         }
     }
 
-    IEnumerator GetLetterCoroutine()
+    IEnumerator GetLetterCoroutine(GameObject text)
     {
         text.SetActive(true);
         yield return new WaitForSeconds(2);
