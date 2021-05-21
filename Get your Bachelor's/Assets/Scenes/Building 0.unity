@@ -6554,8 +6554,8 @@ Tilemap:
   - first: {x: 6, y: 0, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
+      m_TileIndex: 4
+      m_TileSpriteIndex: 4
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -6680,8 +6680,8 @@ Tilemap:
   - first: {x: 6, y: 1, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 2
-      m_TileSpriteIndex: 2
+      m_TileIndex: 5
+      m_TileSpriteIndex: 5
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -6710,21 +6710,31 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: a5a0036fa0073e34f8aa7a1f0409eccf, type: 2}
   - m_RefCount: 37
     m_Data: {fileID: 11400000, guid: 2051e7c8431baa04da2c781b53565514, type: 2}
-  - m_RefCount: 12
+  - m_RefCount: 11
     m_Data: {fileID: 11400000, guid: c58d4a4c63ce6004cbe9c07e07cebdf6, type: 2}
-  - m_RefCount: 12
+  - m_RefCount: 11
     m_Data: {fileID: 11400000, guid: ead32d153f5e6d34daddae9f2aa225a9, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: ad6e6fdb002dc894cb4a422c876467bf, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: bf8a350694ea7de4d9458403c41fdf1c, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 45
     m_Data: {fileID: 199249360466117110, guid: 2a70e2f83cdc14d4dae872090fca89c9, type: 3}
   - m_RefCount: 37
     m_Data: {fileID: 8586074191503405527, guid: 2a70e2f83cdc14d4dae872090fca89c9,
       type: 3}
-  - m_RefCount: 12
+  - m_RefCount: 11
     m_Data: {fileID: -5356574185940491189, guid: 03e022454c3abec4ba35c90bd69ba196,
       type: 3}
-  - m_RefCount: 12
+  - m_RefCount: 11
     m_Data: {fileID: 7088962694465329434, guid: 03e022454c3abec4ba35c90bd69ba196,
+      type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -8301260335840470196, guid: 2208a798d4e3ca04daae2ea845031b8f,
+      type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 6866120199907365078, guid: 2208a798d4e3ca04daae2ea845031b8f,
       type: 3}
   m_TileMatrixArray:
   - m_RefCount: 106
@@ -7075,7 +7085,7 @@ PrefabInstance:
     - target: {fileID: 4058963204687894045, guid: 8b0defb03ce20d8468e34e6bc94da8d4,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6697870814118868593, guid: 8b0defb03ce20d8468e34e6bc94da8d4,
         type: 3}

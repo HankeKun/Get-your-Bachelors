@@ -2019,7 +2019,7 @@ PrefabInstance:
     - target: {fileID: 1445693644719640454, guid: 02e238bf67b3baf45a956ba6388a49a8,
         type: 3}
       propertyPath: m_Name
-      value: KeyEnterOverworld
+      value: KeyEnterBuilding0
       objectReference: {fileID: 0}
     - target: {fileID: 1445693644719640454, guid: 02e238bf67b3baf45a956ba6388a49a8,
         type: 3}
