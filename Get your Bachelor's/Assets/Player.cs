@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public PlayerQestState playerQestState;
+    public PlayerQuestState playerQuestState;
 
     public void Update() {
-        playerQestState = (PlayerQestState) PlayerPrefs.GetInt("QuestState", 0);
+        playerQuestState = (PlayerQuestState) PlayerPrefs.GetInt("QuestState", 0);
     }
 
-    public enum PlayerQestState {
+    public enum PlayerQuestState {
         Nothing = 0,
         Quest1 = 1,
         Quest2 = 2,

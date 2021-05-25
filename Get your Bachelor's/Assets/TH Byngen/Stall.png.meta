@@ -1,7 +1,34 @@
 fileFormatVersion: 2
-guid: d63ff86bcb990f0429a2bcd872442625
+guid: a12c5fec356aa3b4ead08eb1757457c7
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -2277817720713789791
+    second: Stall_0
+  - first:
+      213: -3120610429431775072
+    second: Stall_1
+  - first:
+      213: 5685130196861114508
+    second: Stall_2
+  - first:
+      213: -8070159561761620221
+    second: Stall_3
+  - first:
+      213: 1482964478839879804
+    second: Stall_4
+  - first:
+      213: 1431202941849865215
+    second: Stall_5
+  - first:
+      213: 5834025708891845245
+    second: Stall_6
+  - first:
+      213: -369839540693022092
+    second: Stall_7
+  - first:
+      213: 5669899329623920425
+    second: Stall_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,13 +67,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 9
-  spritePivot: {x: 0.5, y: 0.05}
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 32
-  spriteBorder: {x: 0, y: 0, z: 0, w: 20}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -85,7 +112,70 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Stall_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aeb3c5f9d09360e0800000000000000
+      internalID: -2277817720713789791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stall_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a0075f195d51b4d0800000000000000
+      internalID: -3120610429431775072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stall_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c88d0cdfac3a5ee40800000000000000
+      internalID: 5685130196861114508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

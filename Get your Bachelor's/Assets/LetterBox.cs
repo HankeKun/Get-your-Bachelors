@@ -13,7 +13,7 @@ public class LetterBox : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQestState.Quest1) {
+        if (PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest1) {
             GetComponent<SpriteRenderer>().sprite = post;
         } else {
             GetComponent<SpriteRenderer>().sprite = noPost;
@@ -23,7 +23,7 @@ public class LetterBox : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQestState.Quest1) {
+        if (PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest1) {
             GetComponent<SpriteRenderer>().sprite = post;
         } else {
             GetComponent<SpriteRenderer>().sprite = noPost;
@@ -31,8 +31,8 @@ public class LetterBox : MonoBehaviour
 
         if(playerInRange && Input.GetKeyDown(KeyCode.E))
         {
-            if (PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQestState.Quest1) {
-                PlayerPrefs.SetInt("QuestState", (int) Player.PlayerQestState.Quest2);
+            if (PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest1) {
+                PlayerPrefs.SetInt("QuestState", (int) Player.PlayerQuestState.Quest2);
                 StartCoroutine(GetLetterCoroutine(textOneLetter));
             } else {
                 StartCoroutine(GetLetterCoroutine(textNoLetter));

@@ -15,7 +15,7 @@ public class Desk : MonoBehaviour
     {
         if(playerInRange && Input.GetKeyDown(KeyCode.E))
         {
-            if (PlayerPrefs.GetInt("QuestState", 0) >= (int) Player.PlayerQestState.Quest2) {
+            if (PlayerPrefs.GetInt("QuestState", 0) >= (int) Player.PlayerQuestState.Quest2) {
                 if (dialogBox.activeInHierarchy)
                 {
                     dialogBox.SetActive(false);
@@ -27,8 +27,8 @@ public class Desk : MonoBehaviour
                     dialogBox.SetActive(true);
                     keyEnter.SetActive(false);
                     playerMovement.pState = PlayerState.interact;
-                    if (PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQestState.Quest2)
-                        PlayerPrefs.SetInt("QuestState", (int) Player.PlayerQestState.Quest3);
+                    if (PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest2)
+                        PlayerPrefs.SetInt("QuestState", (int) Player.PlayerQuestState.Quest3);
                 }
             } else {
                 StartCoroutine(GetLetterCoroutine(textNoLetter));
