@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: Stall_4
+  m_Name: WollePresentation_2
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 1482964478839879804, guid: a12c5fec356aa3b4ead08eb1757457c7,
+  m_Sprite: {fileID: -8482972062476600879, guid: ffc75897cbc20a74baf92df2a1001707,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
