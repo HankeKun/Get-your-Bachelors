@@ -13,7 +13,7 @@ public class B1EnterRoom3 : MonoBehaviour
     {
         if(playerInRange && Input.GetKeyDown(KeyCode.E))
         {
-            //levelLoader.whereToGo = 3;
+            levelLoader.whereToGo = 14;
         }
     }
 

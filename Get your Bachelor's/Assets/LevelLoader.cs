@@ -16,7 +16,7 @@ public class LevelLoader : MonoBehaviour
     void Start()
     {
         int isStage = PlayerPrefs.GetInt("Stage", 0);
-        if (isStage != 0 && gridStage0 != null && gridStage1 != null && gridStage2 != null)
+        if (isStage != 0 && gridStage0 != null && gridStage1 != null)
         {
             if (isStage == 1)
             {
@@ -82,6 +82,24 @@ public class LevelLoader : MonoBehaviour
                 PlayerPrefs.SetInt("Stage", 2);
                 playerStorage.initialValue = new Vector2(0, -3);
                 LoadNextLevel(11);
+                break;
+            case 12: // Building 1 Room 1 (Stage 0)
+                playerStorage.initialValue = new Vector2(0, -3);
+                LoadNextLevel(12);
+                break;
+            case 13: // Building 1 Room 2 Toilet (Stage 0)
+                playerStorage.initialValue = new Vector2(4, -3);
+                LoadNextLevel(13);
+                break;
+            case 14: // Building 1 Room 3 (Stage 1)
+                PlayerPrefs.SetInt("Stage", 1);
+                playerStorage.initialValue = new Vector2(0, -3);
+                LoadNextLevel(14);
+                break;
+            case 15: // Building 1 Room 4 Toilet (Stage 1)
+                PlayerPrefs.SetInt("Stage", 1);
+                playerStorage.initialValue = new Vector2(4, -3);
+                LoadNextLevel(15);
                 break;
             default:
                 break;
