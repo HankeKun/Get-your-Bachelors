@@ -5548,7 +5548,7 @@ PrefabInstance:
     - target: {fileID: 7186916157904977745, guid: 3f29c9dc52aa08a45878584c5b588703,
         type: 3}
       propertyPath: m_Name
-      value: Canvas Qest
+      value: Canvas Quest
       objectReference: {fileID: 0}
     - target: {fileID: 7186916157904977772, guid: 3f29c9dc52aa08a45878584c5b588703,
         type: 3}
@@ -7087,6 +7087,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6697870814118868593, guid: 8b0defb03ce20d8468e34e6bc94da8d4,
+        type: 3}
+      propertyPath: grid
+      value: 
+      objectReference: {fileID: 1689917800}
+    - target: {fileID: 6697870814118868593, guid: 8b0defb03ce20d8468e34e6bc94da8d4,
+        type: 3}
+      propertyPath: gridStage0
+      value: 
+      objectReference: {fileID: 1281701029}
+    - target: {fileID: 6697870814118868593, guid: 8b0defb03ce20d8468e34e6bc94da8d4,
+        type: 3}
+      propertyPath: gridStage1
+      value: 
+      objectReference: {fileID: 1689917801}
+    - target: {fileID: 6697870814118868593, guid: 8b0defb03ce20d8468e34e6bc94da8d4,
+        type: 3}
+      propertyPath: gridStage2
+      value: 
+      objectReference: {fileID: 526940316}
     - target: {fileID: 6697870814118868593, guid: 8b0defb03ce20d8468e34e6bc94da8d4,
         type: 3}
       propertyPath: playerStorage

@@ -24,9 +24,21 @@ EditorBuildSettings:
     path: Assets/Scenes/Building 2.unity
     guid: 3fa79defc4fa37c4bb57af4f3a084b92
   - enabled: 1
-    path: Assets/Scenes/B0 Room1.unity
+    path: Assets/Scenes/B0 Room 1.unity
     guid: 6f70c318cfdadd84bae5e4703802639b
   - enabled: 1
-    path: Assets/Scenes/B0 Room2 Toilet.unity
+    path: Assets/Scenes/B0 Room 2 Toilet.unity
     guid: 5dcc4bfbbdefcee4e8e01f18439e24b1
+  - enabled: 1
+    path: Assets/Scenes/B0 Room 3.unity
+    guid: cc58f06270f7bd44c9f746fc248d657b
+  - enabled: 1
+    path: Assets/Scenes/B0 Room 4 Toilet.unity
+    guid: 3377a290064bcc94a95754c6d6c6da20
+  - enabled: 1
+    path: Assets/Scenes/B0 Room 5.unity
+    guid: efaf96836fa1f314db33c2d76a81f09b
+  - enabled: 1
+    path: Assets/Scenes/B0 Room 6 Office.unity
+    guid: 0a6fada3870de614c8798140a4de5c1d
   m_configObjects: {}

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7186916157904977744}
   - component: {fileID: 7186916157904977772}
   m_Layer: 5
-  m_Name: Canvas Qest
+  m_Name: Canvas Quest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -236,7 +236,7 @@ PrefabInstance:
     - target: {fileID: 5311636021922401619, guid: 82f4051079473ec4a8ef11e53b8d60f4,
         type: 3}
       propertyPath: m_Name
-      value: Qest 3
+      value: Quest 3
       objectReference: {fileID: 0}
     - target: {fileID: 5311636021922401629, guid: 82f4051079473ec4a8ef11e53b8d60f4,
         type: 3}
@@ -402,7 +402,7 @@ PrefabInstance:
     - target: {fileID: 5311636021922401619, guid: 82f4051079473ec4a8ef11e53b8d60f4,
         type: 3}
       propertyPath: m_Name
-      value: Qest 1
+      value: Quest 1
       objectReference: {fileID: 0}
     - target: {fileID: 5311636021922401629, guid: 82f4051079473ec4a8ef11e53b8d60f4,
         type: 3}
@@ -543,7 +543,7 @@ PrefabInstance:
     - target: {fileID: 5311636021922401619, guid: 82f4051079473ec4a8ef11e53b8d60f4,
         type: 3}
       propertyPath: m_Name
-      value: Qest 2
+      value: Quest 2
       objectReference: {fileID: 0}
     - target: {fileID: 5311636021922401629, guid: 82f4051079473ec4a8ef11e53b8d60f4,
         type: 3}

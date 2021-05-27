@@ -2,18 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnterRoom4 : MonoBehaviour
+public class ProfKurz : MonoBehaviour
 {
+    //public GameObject dialogBox;
     private bool playerInRange;
+    //public PlayerMovement playerMovement;
     public GameObject keyEnter;
-    public LevelLoader levelLoader;
 
     // Update is called once per frame
     void Update()
     {
         if(playerInRange && Input.GetKeyDown(KeyCode.E))
         {
-            levelLoader.whereToGo = 9;
+
         }
     }
 
