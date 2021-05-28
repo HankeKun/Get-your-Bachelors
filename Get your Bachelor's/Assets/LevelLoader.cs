@@ -101,6 +101,42 @@ public class LevelLoader : MonoBehaviour
                 playerStorage.initialValue = new Vector2(4, -3);
                 LoadNextLevel(15);
                 break;
+            case 16: // Building 2 Room 1 (Stage 0)
+                playerStorage.initialValue = new Vector2(0, -3);
+                LoadNextLevel(16);
+                break;
+            case 17: // Building 2 Room 2 (Stage 0)
+                playerStorage.initialValue = new Vector2(0, -3);
+                LoadNextLevel(17);
+                break;
+            case 18: // Building 2 Room 3 (Stage 0)
+                playerStorage.initialValue = new Vector2(0, -3);
+                LoadNextLevel(18);
+                break;
+            case 19: // Building 2 Room 4 Toilet (Stage 0)
+                playerStorage.initialValue = new Vector2(4, -3);
+                LoadNextLevel(19);
+                break;
+            case 20: // Building 2 Room 5 (Stage 1)
+                PlayerPrefs.SetInt("Stage", 1);
+                playerStorage.initialValue = new Vector2(0, -3);
+                LoadNextLevel(20);
+                break;
+            case 21: // Building 2 Room 6 (Stage 1)
+                PlayerPrefs.SetInt("Stage", 1);
+                playerStorage.initialValue = new Vector2(0, -3);
+                LoadNextLevel(21);
+                break;
+            case 22: // Building 2 Room 7 (Stage 1)
+                PlayerPrefs.SetInt("Stage", 1);
+                playerStorage.initialValue = new Vector2(0, -3);
+                LoadNextLevel(22);
+                break;
+            case 23: // Building 2 Room 8 Toilet (Stage 1)
+                PlayerPrefs.SetInt("Stage", 1);
+                playerStorage.initialValue = new Vector2(4, -3);
+                LoadNextLevel(23);
+                break;
             default:
                 break;
         }
