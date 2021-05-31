@@ -12,9 +12,9 @@ public class Player : MonoBehaviour
 
     public enum PlayerQuestState {
         Nothing = 0,
-        Quest1 = 1,
-        Quest2 = 2,
-        Quest3 = 3,
-        Quest4 = 4
+        Quest1 = 1, // Du hast Post! Hole den Brief.
+        Quest2 = 2, // Geh an deinen Schreibtisch und lese den Brief.
+        Quest3 = 3, // Gehe zur TH und hole deinen Studentenausweis.
+        Quest4 = 4 // 
     }
 }
