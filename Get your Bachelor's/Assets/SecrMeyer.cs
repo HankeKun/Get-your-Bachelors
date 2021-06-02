@@ -22,12 +22,13 @@ public class SecrMeyer : MonoBehaviour
             }
             else
             {
-                if(PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest3)
+                int questState = PlayerPrefs.GetInt("QuestState", 0);
+                if(questState == (int) Player.PlayerQuestState.Quest3)
                 {
                     FindObjectOfType<DialogManager>().StartDialogue(dialog1, dialogBox, keyEnter, text);
                     PlayerPrefs.SetInt("QuestState", (int) Player.PlayerQuestState.Quest4);
                 } 
-                else if(PlayerPrefs.GetInt("QuestState", 0) < (int) Player.PlayerQuestState.Quest3)
+                else if(questState < (int) Player.PlayerQuestState.Quest3)
                 {
                     FindObjectOfType<DialogManager>().StartDialogue(dialog2, dialogBox, keyEnter, text);
                 } 
