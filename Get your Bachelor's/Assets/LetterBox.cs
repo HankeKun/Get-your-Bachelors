@@ -33,9 +33,13 @@ public class LetterBox : MonoBehaviour
         {
             if (PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest1) {
                 PlayerPrefs.SetInt("QuestState", (int) Player.PlayerQuestState.Quest2);
-                StartCoroutine(GetLetterCoroutine(textOneLetter));
+                if(!textOneLetter.activeInHierarchy) {
+                    StartCoroutine(GetLetterCoroutine(textOneLetter));
+                }
             } else {
-                StartCoroutine(GetLetterCoroutine(textNoLetter));
+                if(!textNoLetter.activeInHierarchy) {
+                    StartCoroutine(GetLetterCoroutine(textNoLetter));
+                }
             }
         }
     }

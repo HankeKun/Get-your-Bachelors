@@ -698,6 +698,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 871803115}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &883234058 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9202157169160715102, guid: 3f29c9dc52aa08a45878584c5b588703,
+    type: 3}
+  m_PrefabInstance: {fileID: 1727939397}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &943095568
 GameObject:
   m_ObjectHideFlags: 0
@@ -2509,13 +2515,18 @@ PrefabInstance:
     - target: {fileID: 7186916157904977772, guid: 3f29c9dc52aa08a45878584c5b588703,
         type: 3}
       propertyPath: quests.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7186916157904977772, guid: 3f29c9dc52aa08a45878584c5b588703,
         type: 3}
       propertyPath: quests.Array.data[4]
       value: 
       objectReference: {fileID: 1583645106}
+    - target: {fileID: 7186916157904977772, guid: 3f29c9dc52aa08a45878584c5b588703,
+        type: 3}
+      propertyPath: quests.Array.data[5]
+      value: 
+      objectReference: {fileID: 883234058}
     - target: {fileID: 7186916157904977773, guid: 3f29c9dc52aa08a45878584c5b588703,
         type: 3}
       propertyPath: m_Pivot.x
