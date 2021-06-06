@@ -32,7 +32,7 @@ public class SecrMueller : MonoBehaviour
                         PlayerPrefs.SetInt("QuestState", (int) Player.PlayerQuestState.Quest5);
                         break;
                     case 6:
-                        //FindObjectOfType<DialogManager>().StartDialogue(dialog3, dialogBox, keyEnter, text);
+                        FindObjectOfType<DialogManager>().StartDialogue(dialog3, dialogBox, keyEnter, text);
                         break;
                 }
                 dialogBox.SetActive(true);

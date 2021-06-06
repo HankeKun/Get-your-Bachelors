@@ -11,6 +11,8 @@ public class DialogManager : MonoBehaviour
     private GameObject dialogBox;
     private GameObject keyEnter;
     private TextMeshProUGUI text;
+    private bool isChoice;
+    private GameObject choiceBox;
     
     void Start() {
         sentences = new Queue<string>();
@@ -21,6 +23,7 @@ public class DialogManager : MonoBehaviour
         this.dialogBox = dialogBox;
         this.keyEnter = keyEnter;
         this.text = text;
+        this.isChoice = false;
 
         sentences.Clear();
 
@@ -36,6 +39,9 @@ public class DialogManager : MonoBehaviour
             EndDialogue();
             return;
         }
+        if (isChoice && sentences.Count == 1) {
+            choiceBox.SetActive(true);
+        }
         text.SetText(sentences.Dequeue());
     }
 
@@ -43,5 +49,26 @@ public class DialogManager : MonoBehaviour
         dialogBox.SetActive(false);
         keyEnter.SetActive(true);
         playerMovement.pState = PlayerState.walk;
+    }
+
+    public void StartChoiceDialogue(string[] dialogue,
+                                    GameObject dialogBox,
+                                    GameObject keyEnter,
+                                    TextMeshProUGUI text,
+                                    GameObject choiceBox)
+    {
+        this.dialogBox = dialogBox;
+        this.keyEnter = keyEnter;
+        this.text = text;
+        this.isChoice = true;
+        this.choiceBox = choiceBox;
+
+        sentences.Clear();
+
+        foreach (string sentence in dialogue) {
+            sentences.Enqueue(sentence);
+        }
+
+        DisplayNextSentence();
     }
 }
