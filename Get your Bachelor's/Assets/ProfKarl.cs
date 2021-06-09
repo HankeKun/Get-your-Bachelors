@@ -35,6 +35,9 @@ public class ProfKarl : MonoBehaviour
                         FindObjectOfType<DialogManager>().StartDialogue(dialog3, dialogBox, keyEnter, text);
                         break;
                 }
+                dialogBox.SetActive(true);
+                keyEnter.SetActive(false);
+                playerMovement.pState = PlayerState.interact;
             }
         }
     }

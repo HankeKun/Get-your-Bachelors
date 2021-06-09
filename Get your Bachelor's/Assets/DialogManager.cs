@@ -46,6 +46,8 @@ public class DialogManager : MonoBehaviour
     }
 
     void EndDialogue() {
+        if (isChoice)
+            choiceBox.SetActive(false);
         dialogBox.SetActive(false);
         keyEnter.SetActive(true);
         playerMovement.pState = PlayerState.walk;
