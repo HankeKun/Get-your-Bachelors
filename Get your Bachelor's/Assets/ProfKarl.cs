@@ -67,4 +67,11 @@ public class ProfKarl : MonoBehaviour
 
     private string[] dialog3 = { "Glüsckwunsch du hast die Prüfung Grundlagen der Informatik bestanden.",
     "Nun heißt es dran bleiben und weiter machen." };
+
+    public GameObject exam;
+    public void StartExam()
+    {
+        FindObjectOfType<DialogManager>().DisplayNextSentence();
+        exam.SetActive(true);
+    }
 }
