@@ -331,7 +331,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &14551625
 GameObject:
@@ -2583,7 +2583,7 @@ PrefabInstance:
     - target: {fileID: 7029182531418026328, guid: 848919c902d24e54d94527ccf093c234,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7029182531418026328, guid: 848919c902d24e54d94527ccf093c234,
         type: 3}
@@ -5172,7 +5172,7 @@ Transform:
   m_Children:
   - {fileID: 2043289631}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &420234318
 SpriteRenderer:
@@ -7526,7 +7526,7 @@ PrefabInstance:
     - target: {fileID: 885595728833933026, guid: fdb57bd2f38df6844af4dc98ab21f69c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 885595728833933026, guid: fdb57bd2f38df6844af4dc98ab21f69c,
         type: 3}
@@ -7653,7 +7653,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Aufgabe 4
+  m_text: Aufgabe 4 (2 Punkte)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -12739,7 +12739,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Aufgabe 2
+  m_text: Aufgabe 2 (2 Punkte)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -13481,7 +13481,7 @@ Transform:
   - {fileID: 2100738477}
   - {fileID: 351209510}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1166352256
 GameObject:
@@ -14343,7 +14343,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Aufgabe 1
+  m_text: 'Aufgabe 1 (2 Punkte)
 
 '
   m_isRightToLeft: 0
@@ -15103,7 +15103,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Aufgabe 5
+  m_text: 'Aufgabe 5 (3 Punkte)
 
 '
   m_isRightToLeft: 0
@@ -16595,7 +16595,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!224 &1448373913
 RectTransform:
@@ -16611,7 +16611,7 @@ RectTransform:
   - {fileID: 2121232780}
   - {fileID: 2008439839}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -16895,7 +16895,7 @@ RectTransform:
   - {fileID: 2045096263}
   - {fileID: 179567139}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -19574,7 +19574,7 @@ PrefabInstance:
     - target: {fileID: 4058963204687894044, guid: 8b0defb03ce20d8468e34e6bc94da8d4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4058963204687894044, guid: 8b0defb03ce20d8468e34e6bc94da8d4,
         type: 3}
@@ -19633,8 +19633,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4058963204687894045, guid: 8b0defb03ce20d8468e34e6bc94da8d4,
         type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4058963204687894045, guid: 8b0defb03ce20d8468e34e6bc94da8d4,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4058963205974408233, guid: 8b0defb03ce20d8468e34e6bc94da8d4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494357145088613642, guid: 8b0defb03ce20d8468e34e6bc94da8d4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6697870814118868593, guid: 8b0defb03ce20d8468e34e6bc94da8d4,
         type: 3}
@@ -21651,7 +21666,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Aufgabe 6
+  m_text: 'Aufgabe 6 (3 Punkte)
 
 '
   m_isRightToLeft: 0
@@ -22001,7 +22016,7 @@ PrefabInstance:
     - target: {fileID: 7186916157904977773, guid: 3f29c9dc52aa08a45878584c5b588703,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7186916157904977773, guid: 3f29c9dc52aa08a45878584c5b588703,
         type: 3}
@@ -23965,7 +23980,7 @@ PrefabInstance:
     - target: {fileID: 3333489383767406783, guid: a07c78c567fbae543b731cb7e33ba8cd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3333489383767406783, guid: a07c78c567fbae543b731cb7e33ba8cd,
         type: 3}
@@ -24208,7 +24223,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Aufgabe 3
+  m_text: Aufgabe 3 (2 Punkte)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}

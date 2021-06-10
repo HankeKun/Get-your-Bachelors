@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4058963204687894044}
   - component: {fileID: 6697870814118868593}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LevelLoader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,6 +46,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transition: {fileID: 7554138342650107767}
   whereToGo: 0
+  playerPosition: {x: 0, y: 0}
+  playerStorage: {fileID: 0}
+  gridStage0: {fileID: 0}
+  gridStage1: {fileID: 0}
+  gridStage2: {fileID: 0}
 --- !u!1 &4058963205974408233
 GameObject:
   m_ObjectHideFlags: 0
@@ -59,7 +64,7 @@ GameObject:
   - component: {fileID: 4058963205974408234}
   - component: {fileID: 4058963205974408235}
   - component: {fileID: 7554138342650107767}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Crossfade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +110,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &4058963205974408234
 MonoBehaviour:
@@ -177,7 +182,7 @@ GameObject:
   - component: {fileID: 3865358406395721678}
   - component: {fileID: 4931121467152899915}
   - component: {fileID: 3517666323680928817}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
