@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: c7b969662707726459c8cec4c9bd1749
+guid: ce40fb2ca22650c44b48928928c8b286
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4346244404228752641
-    second: Arrow_0
+      213: 5081025861589282798
+    second: Arrow_Side_0
   - first:
-      213: -6662812116773042688
-    second: Arrow_1
+      213: -5487256559314745932
+    second: Arrow_Side_1
   - first:
-      213: -2292719611878453243
-    second: Arrow_2
+      213: -7709770488404450591
+    second: Arrow_Side_2
   - first:
-      213: 5946551882310926714
-    second: Arrow_3
+      213: -7415979778690511959
+    second: Arrow_Side_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -99,13 +99,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Arrow_0
+      name: Arrow_Side_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 38
-        width: 32
-        height: 19
+        x: 5
+        y: 33
+        width: 19
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -113,20 +113,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffa7ae2edb90fa3c0800000000000000
-      internalID: -4346244404228752641
+      spriteID: eef2a96c91e638640800000000000000
+      internalID: 5081025861589282798
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arrow_1
+      name: Arrow_Side_1
       rect:
         serializedVersion: 2
-        x: 33
-        y: 38
-        width: 32
-        height: 19
+        x: 38
+        y: 33
+        width: 19
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 006039e4eafe883a0800000000000000
-      internalID: -6662812116773042688
+      spriteID: 4b5cc966b3959d3b0800000000000000
+      internalID: -5487256559314745932
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arrow_2
+      name: Arrow_Side_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 5
-        width: 32
-        height: 19
+        x: 5
+        y: 0
+        width: 19
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 500d96c09af9e20e0800000000000000
-      internalID: -2292719611878453243
+      spriteID: 1e2ecd2c694610590800000000000000
+      internalID: -7709770488404450591
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arrow_3
+      name: Arrow_Side_3
       rect:
         serializedVersion: 2
-        x: 33
-        y: 5
-        width: 31
-        height: 19
+        x: 38
+        y: 0
+        width: 19
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,8 +176,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a71c2974e65668250800000000000000
-      internalID: 5946551882310926714
+      spriteID: 9ab0cadcea5251990800000000000000
+      internalID: -7415979778690511959
       vertices: []
       indices: 
       edges: []

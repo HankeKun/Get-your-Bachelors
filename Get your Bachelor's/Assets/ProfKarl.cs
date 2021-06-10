@@ -68,10 +68,34 @@ public class ProfKarl : MonoBehaviour
     private string[] dialog3 = { "Glüsckwunsch du hast die Prüfung Grundlagen der Informatik bestanden.",
     "Nun heißt es dran bleiben und weiter machen." };
 
+    private string[] dialog4 = { "Tut mir leid aber du hast die Prüfung nicht bestanden.",
+    "Schau dir nochmal die Vorlesung an und komm wieder, wenn du bereit bist." };
+
     public GameObject exam;
+    public GameObject examPage2;
     public void StartExam()
     {
         FindObjectOfType<DialogManager>().DisplayNextSentence();
         exam.SetActive(true);
+    }
+
+    public void EndExam()
+    {
+        exam.SetActive(false);
+        examPage2.SetActive(false);
+
+        // Exam bewerten lassen
+        // if bestanden dialog 3 und setze QuestState+1
+        if (FindObjectOfType<ExamIGRU>().IsExamPassed()) {
+            FindObjectOfType<DialogManager>().StartDialogue(dialog3, dialogBox, keyEnter, text);
+            PlayerPrefs.SetInt("QuestState", (int) Player.PlayerQuestState.Quest7);
+        }
+        else {
+            FindObjectOfType<DialogManager>().StartDialogue(dialog4, dialogBox, keyEnter, text);
+        }
+        
+        dialogBox.SetActive(true);
+        keyEnter.SetActive(false);
+        playerMovement.pState = PlayerState.interact;
     }
 }

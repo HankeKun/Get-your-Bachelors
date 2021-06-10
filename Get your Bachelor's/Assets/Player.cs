@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
         Quest3 = 3, // Gehe zur TH und hole deinen Studentenausweis.
         Quest4 = 4, // Informiere dich bei Sekretärin Müller über das Studium.
         Quest5 = 5, // Geh nach Hause und schlaf damit du fit für das Studium bist.
-        Quest6 = 6, // Bereit für das erste Semester. Besuch deine Vorlesung.
-        Quest7 = 7 
+        Quest6 = 6, // Bereit für das erste Semester. Besuch deine Vorlesung und bestehe die Prüfung.
+        Quest7 = 7 // Geh nach Hause schlafen, um dich auf das zweite Semester vorzubereiten.
     }
 }
