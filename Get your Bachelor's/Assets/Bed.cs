@@ -19,6 +19,12 @@ public class Bed : MonoBehaviour
                     PlayerPrefs.SetInt("QuestState", (int) Player.PlayerQuestState.Quest6);
                     StartCoroutine(SleepCoroutine());
                 }
+            } 
+            else if (PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest7) {
+                if (keyEnter.activeInHierarchy) {
+                    PlayerPrefs.SetInt("QuestState", (int) Player.PlayerQuestState.Quest8);
+                    StartCoroutine(SleepCoroutine());
+                }
             }
         }
     }
@@ -28,7 +34,8 @@ public class Bed : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInRange = true;
-            if (PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest5) {
+            if (PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest5 ||
+                PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest7) {
                 keyEnter.SetActive(true);
             }
         }

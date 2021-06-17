@@ -95332,7 +95332,7 @@ PrefabInstance:
     - target: {fileID: 7186916157904977772, guid: 3f29c9dc52aa08a45878584c5b588703,
         type: 3}
       propertyPath: quests.Array.size
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7186916157904977772, guid: 3f29c9dc52aa08a45878584c5b588703,
         type: 3}
@@ -95359,6 +95359,16 @@ PrefabInstance:
       propertyPath: quests.Array.data[7]
       value: 
       objectReference: {fileID: 7186916157832487314}
+    - target: {fileID: 7186916157904977772, guid: 3f29c9dc52aa08a45878584c5b588703,
+        type: 3}
+      propertyPath: quests.Array.data[8]
+      value: 
+      objectReference: {fileID: 7186916157832487316}
+    - target: {fileID: 7186916157904977772, guid: 3f29c9dc52aa08a45878584c5b588703,
+        type: 3}
+      propertyPath: quests.Array.data[9]
+      value: 
+      objectReference: {fileID: 7186916157832487315}
     - target: {fileID: 7186916157904977773, guid: 3f29c9dc52aa08a45878584c5b588703,
         type: 3}
       propertyPath: m_Pivot.x
@@ -95493,6 +95503,18 @@ GameObject:
 --- !u!1 &7186916157832487314 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8372461007573964365, guid: 3f29c9dc52aa08a45878584c5b588703,
+    type: 3}
+  m_PrefabInstance: {fileID: 7186916157832487309}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7186916157832487315 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1757539110179101945, guid: 3f29c9dc52aa08a45878584c5b588703,
+    type: 3}
+  m_PrefabInstance: {fileID: 7186916157832487309}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7186916157832487316 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2755045233215750258, guid: 3f29c9dc52aa08a45878584c5b588703,
     type: 3}
   m_PrefabInstance: {fileID: 7186916157832487309}
   m_PrefabAsset: {fileID: 0}

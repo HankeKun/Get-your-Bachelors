@@ -58,6 +58,16 @@ public class LoadQuest : MonoBehaviour
                     if (i != 7) quests[i].SetActive(false);
                 quests[7].SetActive(true);
                 break;
+            case Player.PlayerQuestState.Quest8:
+                for (int i=0; i < quests.Length; i++)
+                    if (i != 8) quests[i].SetActive(false);
+                quests[8].SetActive(true);
+                break;
+            case Player.PlayerQuestState.Quest9:
+                for (int i=0; i < quests.Length; i++)
+                    if (i != 9) quests[i].SetActive(false);
+                quests[9].SetActive(true);
+                break;
             default:
                 break;
         }

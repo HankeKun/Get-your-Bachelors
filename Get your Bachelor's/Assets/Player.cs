@@ -18,6 +18,8 @@ public class Player : MonoBehaviour
         Quest4 = 4, // Informiere dich bei Sekretärin Müller über das Studium.
         Quest5 = 5, // Geh nach Hause und schlaf damit du fit für das Studium bist.
         Quest6 = 6, // Bereit für das erste Semester. Besuch deine Vorlesung und bestehe die Prüfung.
-        Quest7 = 7 // Geh nach Hause schlafen, um dich auf das zweite Semester vorzubereiten.
+        Quest7 = 7, // Geh nach Hause schlafen, um dich auf das zweite Semester vorzubereiten.
+        Quest8 = 8, // 
+        Quest9 = 9
     }
 }

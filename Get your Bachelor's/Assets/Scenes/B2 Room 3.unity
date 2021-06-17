@@ -5152,6 +5152,7 @@ GameObject:
   - component: {fileID: 420234319}
   - component: {fileID: 420234320}
   - component: {fileID: 420234321}
+  - component: {fileID: 420234322}
   m_Layer: 0
   m_Name: Prof Karl
   m_TagString: Untagged
@@ -5213,7 +5214,7 @@ SpriteRenderer:
   m_SortingLayerID: -105541197
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 731ba9ac2ca6f7b499d0fc36ff89c77c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8352aa7fc82a3cf4a95d74f38b7220f9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5255,8 +5256,8 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.18}
   m_SpriteTilingProperty:
-    border: {x: 0.625, y: 0, z: 0.625, w: 0.75}
-    pivot: {x: 0.5, y: 0.1}
+    border: {x: 0.625, y: 0.125, z: 0.625, w: 0.75}
+    pivot: {x: 0.5, y: 0.15}
     oldSize: {x: 2, y: 2}
     newSize: {x: 2, y: 2}
     adaptiveTilingThreshold: 0.5
@@ -5285,6 +5286,25 @@ MonoBehaviour:
   choiceBox: {fileID: 179567138}
   exam: {fileID: 2121232779}
   examPage2: {fileID: 2008439838}
+--- !u!95 &420234322
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420234316}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 742f5144efbd5f44191b512192ec1c48, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &428584575
 GameObject:
   m_ObjectHideFlags: 0
@@ -23440,7 +23460,7 @@ PrefabInstance:
     - target: {fileID: 1445693644719640449, guid: 02e238bf67b3baf45a956ba6388a49a8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.58
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 1445693644719640449, guid: 02e238bf67b3baf45a956ba6388a49a8,
         type: 3}
