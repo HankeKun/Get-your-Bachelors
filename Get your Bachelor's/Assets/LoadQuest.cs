@@ -58,15 +58,23 @@ public class LoadQuest : MonoBehaviour
                     if (i != 7) quests[i].SetActive(false);
                 quests[7].SetActive(true);
                 break;
+            // Bestehe die Prüfung des 2. Semesters.
             case Player.PlayerQuestState.Quest8:
                 for (int i=0; i < quests.Length; i++)
                     if (i != 8) quests[i].SetActive(false);
                 quests[8].SetActive(true);
                 break;
+            // Geh nach Hause schlafen, um dich auf das dritte Semester vorzubereiten.
             case Player.PlayerQuestState.Quest9:
                 for (int i=0; i < quests.Length; i++)
                     if (i != 9) quests[i].SetActive(false);
                 quests[9].SetActive(true);
+                break;
+            // Bestehe die Prüfung des 3. Semesters.
+            case Player.PlayerQuestState.Quest10:
+                for (int i=0; i < quests.Length; i++)
+                    if (i != 10) quests[i].SetActive(false);
+                quests[10].SetActive(true);
                 break;
             default:
                 break;

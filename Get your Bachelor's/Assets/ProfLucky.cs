@@ -75,6 +75,7 @@ public class ProfLucky : MonoBehaviour
     public void StartExam()
     {
         FindObjectOfType<DialogManager>().DisplayNextSentence();
+        playerMovement.pState = PlayerState.interact;
         exam.SetActive(true);
     }
 

@@ -26,6 +26,12 @@ public class Bed : MonoBehaviour
                     StartCoroutine(SleepCoroutine());
                 }
             }
+            else if (PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest9) {
+                if (keyEnter.activeInHierarchy) {
+                    PlayerPrefs.SetInt("QuestState", (int) Player.PlayerQuestState.Quest10);
+                    StartCoroutine(SleepCoroutine());
+                }
+            }
         }
     }
 
