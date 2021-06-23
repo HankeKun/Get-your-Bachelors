@@ -31,8 +31,17 @@ public class SecrMueller : MonoBehaviour
                         FindObjectOfType<DialogManager>().StartDialogue(dialog2, dialogBox, keyEnter, text);
                         PlayerPrefs.SetInt("QuestState", (int) Player.PlayerQuestState.Quest5);
                         break;
+                    case int n when (n == 7 || n == 9):
+                        FindObjectOfType<DialogManager>().StartDialogue(dialog1, dialogBox, keyEnter, text);
+                        break;
                     case 6:
                         FindObjectOfType<DialogManager>().StartDialogue(dialog3, dialogBox, keyEnter, text);
+                        break;
+                    case 8:
+                        FindObjectOfType<DialogManager>().StartDialogue(dialog4, dialogBox, keyEnter, text);
+                        break;
+                    case 10:
+                        FindObjectOfType<DialogManager>().StartDialogue(dialog5, dialogBox, keyEnter, text);
                         break;
                 }
                 dialogBox.SetActive(true);
@@ -68,7 +77,7 @@ public class SecrMueller : MonoBehaviour
     "Das 3. Semester besteht aus Kommunikation und Netze (Internet).",
     "Das 4. Semester besteht aus Datenbanken.",
     "Das 5. Semester besteht aus Software Qualität.",
-    "Das 6. Semester besteht aus Theoretischer Informatik.",
+    "Das 6. Semester besteht aus Mathematik.",
     "Die Bachelorarbeit ist dann eine Zusammensetzung aus Allem.",
     "Falls du mal nicht weiter weißt, komm einfach zu mir." };
 
@@ -76,5 +85,11 @@ public class SecrMueller : MonoBehaviour
     "Dann solltest du Professor Karl finden. Er unterrichtet Grundlagen der Informatik.",
     "Du solltest ihn im Gebäude 2 Raum 2 finden." };
 
-    //private string[] dialog3 = { "Hallo, informier dich bei Sekretärin Müller, was es zu tun gibt." };
+    private string[] dialog4 = { "Hey, du bist also momentan im zweiten Semester.",
+    "Dann solltest du Professor Lucky finden. Er unterrichtet Programmieren.",
+    "Du solltest ihn im Gebäude 1 Raum 1 finden." };
+
+    private string[] dialog5 = { "Hey, du bist also momentan im dritten Semester.",
+    "Dann solltest du Professor Kurz finden. Er unterrichtet Kommunikation und Netze.",
+    "Du solltest ihn im Gebäude 0 Raum 3 finden." };
 }

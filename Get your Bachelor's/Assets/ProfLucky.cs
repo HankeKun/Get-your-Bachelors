@@ -64,7 +64,7 @@ public class ProfLucky : MonoBehaviour
     private string[] dialog2 = { "Hör dir die Vorlesung an indem du dich an einen Tisch setzt.",
     "Bist du bereit für die Prüfung?" };
 
-    private string[] dialog3 = { "Glüsckwunsch du hast die Prüfung Programmieren bestanden.",
+    private string[] dialog3 = { "Glückwunsch du hast die Prüfung Programmieren bestanden.",
     "Nun heißt es dran bleiben und weiter machen." };
 
     private string[] dialog4 = { "Tut mir leid aber du hast die Prüfung nicht bestanden.",
