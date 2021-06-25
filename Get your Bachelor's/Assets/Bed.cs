@@ -41,7 +41,8 @@ public class Bed : MonoBehaviour
         {
             playerInRange = true;
             if (PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest5 ||
-                PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest7) {
+                PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest7 ||
+                PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest9) {
                 keyEnter.SetActive(true);
             }
         }

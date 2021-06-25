@@ -21,6 +21,8 @@ public class Player : MonoBehaviour
         Quest7 = 7, // Geh nach Hause schlafen, um dich auf das zweite Semester vorzubereiten.
         Quest8 = 8, // Bestehe die Prüfung des 2. Semesters.
         Quest9 = 9, // Geh nach Hause schlafen, um dich auf das dritte Semester vorzubereiten.
-        Quest10 = 10 // Bestehe die Prüfung des 3. Semesters.
+        Quest10 = 10, // Bestehe die Prüfung des 3. Semesters.
+        Quest11 = 11, // Geh nach Hause schlafen, um dich auf das vierte Semester vorzubereiten.
+        Quest12 = 12 // Bestehe die Prüfung des 4. Semesters.
     }
 }
