@@ -32,6 +32,30 @@ public class Bed : MonoBehaviour
                     StartCoroutine(SleepCoroutine());
                 }
             }
+            else if (PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest11) {
+                if (keyEnter.activeInHierarchy) {
+                    PlayerPrefs.SetInt("QuestState", (int) Player.PlayerQuestState.Quest12);
+                    StartCoroutine(SleepCoroutine());
+                }
+            }
+            else if (PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest13) {
+                if (keyEnter.activeInHierarchy) {
+                    PlayerPrefs.SetInt("QuestState", (int) Player.PlayerQuestState.Quest14);
+                    StartCoroutine(SleepCoroutine());
+                }
+            }
+            else if (PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest15) {
+                if (keyEnter.activeInHierarchy) {
+                    PlayerPrefs.SetInt("QuestState", (int) Player.PlayerQuestState.Quest16);
+                    StartCoroutine(SleepCoroutine());
+                }
+            }
+            else if (PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest17) {
+                if (keyEnter.activeInHierarchy) {
+                    PlayerPrefs.SetInt("QuestState", (int) Player.PlayerQuestState.Quest18);
+                    StartCoroutine(SleepCoroutine());
+                }
+            }
         }
     }
 
@@ -42,7 +66,11 @@ public class Bed : MonoBehaviour
             playerInRange = true;
             if (PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest5 ||
                 PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest7 ||
-                PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest9) {
+                PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest9 ||
+                PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest11 ||
+                PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest13 ||
+                PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest15 ||
+                PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest17) {
                 keyEnter.SetActive(true);
             }
         }

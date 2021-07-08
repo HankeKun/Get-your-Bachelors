@@ -23,6 +23,12 @@ public class Player : MonoBehaviour
         Quest9 = 9, // Geh nach Hause schlafen, um dich auf das dritte Semester vorzubereiten.
         Quest10 = 10, // Bestehe die Prüfung des 3. Semesters.
         Quest11 = 11, // Geh nach Hause schlafen, um dich auf das vierte Semester vorzubereiten.
-        Quest12 = 12 // Bestehe die Prüfung des 4. Semesters.
+        Quest12 = 12, // Bestehe die Prüfung des 4. Semesters.
+        Quest13 = 13, // Geh nach Hause schlafen, um dich auf das fünfte Semester vorzubereiten.
+        Quest14 = 14, // Bestehe die Prüfung des 5. Semesters.
+        Quest15 = 15, // Geh nach Hause schlafen, um dich auf das sechste und letzte Semester vorzubereiten.
+        Quest16 = 16, // Bestehe die Prüfung des 6. Semesters.
+        Quest17 = 17, // Geh nach Hause schlafen, um dich auf deine Bachelorarbeit vorzubereiten.
+        Quest18 = 18 // Bestehe deine Bachelorarbeit im Fach Informatik.
     }
 }
