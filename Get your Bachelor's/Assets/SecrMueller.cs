@@ -31,7 +31,7 @@ public class SecrMueller : MonoBehaviour
                         FindObjectOfType<DialogManager>().StartDialogue(dialog2, dialogBox, keyEnter, text);
                         PlayerPrefs.SetInt("QuestState", (int) Player.PlayerQuestState.Quest5);
                         break;
-                    case int n when (n == 7 || n == 9 || n == 11):
+                    case int n when (n == 7 || n == 9 || n == 11 || n == 13 || n == 15 || n == 17):
                         FindObjectOfType<DialogManager>().StartDialogue(dialog1, dialogBox, keyEnter, text);
                         break;
                     case 6:
@@ -45,6 +45,12 @@ public class SecrMueller : MonoBehaviour
                         break;
                     case 12:
                         FindObjectOfType<DialogManager>().StartDialogue(dialog6, dialogBox, keyEnter, text);
+                        break;
+                    case 14:
+                        FindObjectOfType<DialogManager>().StartDialogue(dialog7, dialogBox, keyEnter, text);
+                        break;
+                    case 16:
+                        FindObjectOfType<DialogManager>().StartDialogue(dialog8, dialogBox, keyEnter, text);
                         break;
                 }
                 dialogBox.SetActive(true);
@@ -99,4 +105,12 @@ public class SecrMueller : MonoBehaviour
     private string[] dialog6 = { "Hey, du bist also momentan im vierten Semester.",
     "Dann solltest du Professor Schmydt finden. Er unterrichtet Datenbanken.",
     "Du solltest ihn im Gebäude 2 Raum 6 finden." };
+
+    private string[] dialog7 = { "Hey, du bist also momentan im fünften Semester.",
+    "Dann solltest du Professor Wolle finden. Er unterrichtet Software Qualität.",
+    "Du solltest ihn im Gebäude 0 Raum 1 finden." };
+
+    private string[] dialog8 = { "Hey, du bist also momentan im sechsten Semester.",
+    "Dann solltest du Professor Krei finden. Er unterrichtet Mathe.",
+    "Du solltest ihn im Gebäude 0 Raum 1 finden." };
 }
