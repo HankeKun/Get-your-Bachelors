@@ -8,6 +8,7 @@ public class DialogManager : MonoBehaviour
     private Queue<string> sentences;
 
     public PlayerMovement playerMovement;
+    public SchmydtMovement schmydtMovement;
     private GameObject dialogBox;
     private GameObject keyEnter;
     private TextMeshProUGUI text;
@@ -51,6 +52,7 @@ public class DialogManager : MonoBehaviour
         dialogBox.SetActive(false);
         keyEnter.SetActive(true);
         playerMovement.pState = PlayerState.walk;
+        if (schmydtMovement != null) schmydtMovement.sState = SchmydtState.walk;
     }
 
     public void StartChoiceDialogue(string[] dialogue,
