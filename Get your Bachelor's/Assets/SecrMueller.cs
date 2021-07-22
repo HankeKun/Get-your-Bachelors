@@ -111,6 +111,6 @@ public class SecrMueller : MonoBehaviour
     "Du solltest ihn im Gebäude 0 Raum 1 finden." };
 
     private string[] dialog8 = { "Hey, du bist also momentan im sechsten Semester.",
-    "Dann solltest du Professor Krei finden. Er unterrichtet Mathe.",
-    "Du solltest ihn im Gebäude 0 Raum 1 finden." };
+    "Dann solltest du Professor Kreis finden. Er unterrichtet Mathe.",
+    "Du solltest ihn im Gebäude 2 Raum 7 finden." };
 }

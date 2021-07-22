@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 
 public class ExamDABA : MonoBehaviour
 {
@@ -35,27 +36,27 @@ public class ExamDABA : MonoBehaviour
     private int CheckExercise2()
     {
         int points = 0;
-        if (inputAufgabe1[0].text == "A") {
+        if (inputAufgabe2[0].text.Equals("A", StringComparison.OrdinalIgnoreCase)) {
             points += 2;
-            if (inputAufgabe1[1].text == "C") {
+            if (inputAufgabe2[1].text.Equals("C", StringComparison.OrdinalIgnoreCase)) {
                 points += 2;
             }
         }
-        if (inputAufgabe1[1].text == "A") {
+        if (inputAufgabe2[1].text.Equals("A", StringComparison.OrdinalIgnoreCase)) {
             points += 2;
-            if (inputAufgabe1[0].text == "C") {
+            if (inputAufgabe2[0].text.Equals("C", StringComparison.OrdinalIgnoreCase)) {
                 points += 2;
             }
         }
-        if (inputAufgabe1[3].text == "A") {
+        if (inputAufgabe2[2].text.Equals("A", StringComparison.OrdinalIgnoreCase)) {
             points += 2;
-            if (inputAufgabe1[4].text == "B") {
+            if (inputAufgabe2[3].text.Equals("B", StringComparison.OrdinalIgnoreCase)) {
                 points += 2;
             }
         }
-        if (inputAufgabe1[4].text == "A") {
+        if (inputAufgabe2[3].text.Equals("A", StringComparison.OrdinalIgnoreCase)) {
             points += 2;
-            if (inputAufgabe1[3].text == "B") {
+            if (inputAufgabe2[2].text.Equals("B", StringComparison.OrdinalIgnoreCase)) {
                 points += 2;
             }
         }
