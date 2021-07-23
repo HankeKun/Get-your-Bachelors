@@ -52,6 +52,9 @@ public class SecrMueller : MonoBehaviour
                     case 16:
                         FindObjectOfType<DialogManager>().StartDialogue(dialog8, dialogBox, keyEnter, text);
                         break;
+                    case 18:
+                        FindObjectOfType<DialogManager>().StartDialogue(dialog9, dialogBox, keyEnter, text);
+                        break;
                 }
                 dialogBox.SetActive(true);
                 keyEnter.SetActive(false);
@@ -113,4 +116,8 @@ public class SecrMueller : MonoBehaviour
     private string[] dialog8 = { "Hey, du bist also momentan im sechsten Semester.",
     "Dann solltest du Professor Kreis finden. Er unterrichtet Mathe.",
     "Du solltest ihn im Gebäude 2 Raum 7 finden." };
+
+    private string[] dialog9 = { "Hey, du bist also momentan im siebten Semester.",
+    "Dann musst du deine Bachelorarbeit schreiben.",
+    "Dies kannst du bei jedem Professor machen." };
 }

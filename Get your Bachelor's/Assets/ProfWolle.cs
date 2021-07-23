@@ -65,7 +65,7 @@ public class ProfWolle : MonoBehaviour
     private string[] dialog2 = { "Hör dir die Vorlesung an indem du dich an einen Tisch setzt.",
     "Bist du bereit für die Prüfung?" };
 
-    private string[] dialog3 = { "Glückwunsch du hast die Prüfung Grundlagen der Informatik bestanden.",
+    private string[] dialog3 = { "Glückwunsch du hast die Prüfung Software Qualität bestanden.",
     "Nun heißt es dran bleiben und weiter machen." };
 
     private string[] dialog4 = { "Tut mir leid aber du hast die Prüfung nicht bestanden.",
@@ -84,17 +84,17 @@ public class ProfWolle : MonoBehaviour
     {
         exam.SetActive(false);
         examPage2.SetActive(false);
-/*
+
         // Exam bewerten lassen
         // if bestanden dialog 3 und setze QuestState+1
-        if (FindObjectOfType<ExamIGRU>().IsExamPassed()) {
+        if (FindObjectOfType<ExamSQUA>().IsExamPassed()) {
             FindObjectOfType<DialogManager>().StartDialogue(dialog3, dialogBox, keyEnter, text);
-            PlayerPrefs.SetInt("QuestState", (int) Player.PlayerQuestState.Quest7);
+            //PlayerPrefs.SetInt("QuestState", (int) Player.PlayerQuestState.Quest15);
         }
         else {
             FindObjectOfType<DialogManager>().StartDialogue(dialog4, dialogBox, keyEnter, text);
         }
-*/
+
         dialogBox.SetActive(true);
         keyEnter.SetActive(false);
         playerMovement.pState = PlayerState.interact;
