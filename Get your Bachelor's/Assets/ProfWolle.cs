@@ -89,7 +89,7 @@ public class ProfWolle : MonoBehaviour
         // if bestanden dialog 3 und setze QuestState+1
         if (FindObjectOfType<ExamSQUA>().IsExamPassed()) {
             FindObjectOfType<DialogManager>().StartDialogue(dialog3, dialogBox, keyEnter, text);
-            //PlayerPrefs.SetInt("QuestState", (int) Player.PlayerQuestState.Quest15);
+            PlayerPrefs.SetInt("QuestState", (int) Player.PlayerQuestState.Quest15);
         }
         else {
             FindObjectOfType<DialogManager>().StartDialogue(dialog4, dialogBox, keyEnter, text);
