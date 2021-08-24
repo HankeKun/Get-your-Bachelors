@@ -1,0 +1,7 @@
+QuestState -done
+
+Scene
+Vector2 (x-location, y-location)
+floor
+
+Spiel abgeschlossen boolean

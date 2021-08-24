@@ -5,6 +5,7 @@ using UnityEngine;
 public class Building2Inner : MonoBehaviour
 {
     private bool playerInRange;
+    public PlayerMovement playerMovement;
     public GameObject keyEnter;
     public LevelLoader levelLoader;
     public Rigidbody2D player;
@@ -12,7 +13,7 @@ public class Building2Inner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(playerInRange && Input.GetKeyDown(KeyCode.E))
+        if(playerInRange && Input.GetKeyDown(KeyCode.E) && (playerMovement.pState != PlayerState.gamemenu))
         {
             levelLoader.whereToGo = 1;
         }

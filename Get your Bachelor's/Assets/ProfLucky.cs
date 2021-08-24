@@ -14,7 +14,7 @@ public class ProfLucky : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(playerInRange && Input.GetKeyDown(KeyCode.E))
+        if(playerInRange && Input.GetKeyDown(KeyCode.E) && (playerMovement.pState != PlayerState.gamemenu))
         {
             if (dialogBox.activeInHierarchy)
             {

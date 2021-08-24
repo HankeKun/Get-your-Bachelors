@@ -8,9 +8,20 @@ public class MainMenu : MonoBehaviour
     public VectorValue playerStorage;
     public void PlayGame()
     {
-        PlayerPrefs.SetInt("QuestState", 1);
-        playerStorage.initialValue =  new Vector2(0, 0);
-        SceneManager.LoadScene(2);
+        if (PlayerPrefs.GetInt("Ended", 1) == 1)
+        {
+            PlayerPrefs.SetInt("Ended", 0);
+            PlayerPrefs.SetInt("QuestState", 1);
+            playerStorage.initialValue =  new Vector2(0, 0);
+            SceneManager.LoadScene(2);
+        } 
+        else
+        {
+            float x = PlayerPrefs.GetFloat("X", 0);
+            float y = PlayerPrefs.GetFloat("Y", 0);
+            playerStorage.initialValue =  new Vector2(x, y);
+            SceneManager.LoadScene(PlayerPrefs.GetInt("Scene", 2));
+        }
     }
 
     public void QuitGame()

@@ -12,7 +12,7 @@ public class Bed : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(playerInRange && Input.GetKeyDown(KeyCode.E))
+        if(playerInRange && Input.GetKeyDown(KeyCode.E) && (playerMovement.pState != PlayerState.gamemenu))
         {
             if (PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest5) {
                 if (keyEnter.activeInHierarchy) {

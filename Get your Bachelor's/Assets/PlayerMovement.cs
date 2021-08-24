@@ -5,7 +5,8 @@ using UnityEngine;
 public enum PlayerState
 {
     walk,
-    interact
+    interact,
+    gamemenu
 }
 public class PlayerMovement : MonoBehaviour
 {

@@ -5,6 +5,7 @@ using UnityEngine;
 public class LetterBox : MonoBehaviour
 {
     private bool playerInRange;
+    public PlayerMovement playerMovement;
     public GameObject keyEnter;
     public Sprite post;
     public Sprite noPost;
@@ -29,7 +30,7 @@ public class LetterBox : MonoBehaviour
             GetComponent<SpriteRenderer>().sprite = noPost;
         }
 
-        if(playerInRange && Input.GetKeyDown(KeyCode.E))
+        if(playerInRange && Input.GetKeyDown(KeyCode.E) && (playerMovement.pState != PlayerState.gamemenu))
         {
             if (PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest1) {
                 PlayerPrefs.SetInt("QuestState", (int) Player.PlayerQuestState.Quest2);
