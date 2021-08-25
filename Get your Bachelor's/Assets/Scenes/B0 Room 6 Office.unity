@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2657,6 +2657,7 @@ MonoBehaviour:
   dialogBox: {fileID: 993398338}
   playerMovement: {fileID: 1132823314}
   text: {fileID: 993398337}
+  dayNightValue: {fileID: 11400000, guid: d3e182a48e35b27448b3db9d5c4a9579, type: 2}
 --- !u!1 &1699100922 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1175235047984749473, guid: 3f29c9dc52aa08a45878584c5b588703,
