@@ -8,6 +8,7 @@ public class Bed : MonoBehaviour
     public GameObject keyEnter;
     public PlayerMovement playerMovement;
     public Animator animationGoSleep;
+    public DayNightValue dayNightValue;
 
     // Update is called once per frame
     void Update()
@@ -17,42 +18,49 @@ public class Bed : MonoBehaviour
             if (PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest5) {
                 if (keyEnter.activeInHierarchy) {
                     PlayerPrefs.SetInt("QuestState", (int) Player.PlayerQuestState.Quest6);
+                    dayNightValue.intensity = 1f;
                     StartCoroutine(SleepCoroutine());
                 }
             } 
             else if (PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest7) {
                 if (keyEnter.activeInHierarchy) {
                     PlayerPrefs.SetInt("QuestState", (int) Player.PlayerQuestState.Quest8);
+                    dayNightValue.intensity = 1f;
                     StartCoroutine(SleepCoroutine());
                 }
             }
             else if (PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest9) {
                 if (keyEnter.activeInHierarchy) {
                     PlayerPrefs.SetInt("QuestState", (int) Player.PlayerQuestState.Quest10);
+                    dayNightValue.intensity = 1f;
                     StartCoroutine(SleepCoroutine());
                 }
             }
             else if (PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest11) {
                 if (keyEnter.activeInHierarchy) {
                     PlayerPrefs.SetInt("QuestState", (int) Player.PlayerQuestState.Quest12);
+                    dayNightValue.intensity = 1f;
                     StartCoroutine(SleepCoroutine());
                 }
             }
             else if (PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest13) {
                 if (keyEnter.activeInHierarchy) {
                     PlayerPrefs.SetInt("QuestState", (int) Player.PlayerQuestState.Quest14);
+                    dayNightValue.intensity = 1f;
                     StartCoroutine(SleepCoroutine());
                 }
             }
             else if (PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest15) {
                 if (keyEnter.activeInHierarchy) {
                     PlayerPrefs.SetInt("QuestState", (int) Player.PlayerQuestState.Quest16);
+                    dayNightValue.intensity = 1f;
                     StartCoroutine(SleepCoroutine());
                 }
             }
             else if (PlayerPrefs.GetInt("QuestState", 0) == (int) Player.PlayerQuestState.Quest17) {
                 if (keyEnter.activeInHierarchy) {
                     PlayerPrefs.SetInt("QuestState", (int) Player.PlayerQuestState.Quest18);
+                    dayNightValue.intensity = 1f;
                     StartCoroutine(SleepCoroutine());
                 }
             }

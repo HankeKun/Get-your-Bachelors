@@ -11,6 +11,7 @@ public class ProfLucky : MonoBehaviour
     public GameObject keyEnter;
     public TextMeshProUGUI text;
     public GameObject choiceBox;
+    public DayNightValue dayNightValue;
     // Update is called once per frame
     void Update()
     {
@@ -89,6 +90,7 @@ public class ProfLucky : MonoBehaviour
         if (FindObjectOfType<ExamPROG>().IsExamPassed()) {
             FindObjectOfType<DialogManager>().StartDialogue(dialog3, dialogBox, keyEnter, text);
             PlayerPrefs.SetInt("QuestState", (int) Player.PlayerQuestState.Quest9);
+            dayNightValue.intensity = 0.5f;
         }
         else {
             FindObjectOfType<DialogManager>().StartDialogue(dialog4, dialogBox, keyEnter, text);

@@ -11,6 +11,7 @@ public class ProfKurz : MonoBehaviour
     public PlayerMovement playerMovement;
     public TextMeshProUGUI text;
     public GameObject choiceBox;
+    public DayNightValue dayNightValue;
 
     // Update is called once per frame
     void Update()
@@ -90,6 +91,7 @@ public class ProfKurz : MonoBehaviour
         if (FindObjectOfType<ExamKONE>().IsExamPassed()) {
             FindObjectOfType<DialogManager>().StartDialogue(dialog3, dialogBox, keyEnter, text);
             PlayerPrefs.SetInt("QuestState", (int) Player.PlayerQuestState.Quest11);
+            dayNightValue.intensity = 0.5f;
         }
         else {
             FindObjectOfType<DialogManager>().StartDialogue(dialog4, dialogBox, keyEnter, text);
