@@ -18,10 +18,12 @@ public class PlayerMovement : MonoBehaviour
     public PlayerState pState;
     public VectorValue startingPosition;
 
+    void Awake() {
+        transform.position = startingPosition.initialValue;
+    }
     void Start()
     {
         pState = PlayerState.walk;
-        transform.position = startingPosition.initialValue;
     }
     // Update is called once per frame
     void Update()
