@@ -11,6 +11,8 @@ public class GameMenu : MonoBehaviour
     public GameObject quitButton;
     public GameObject background;
     public PlayerMovement playerMovement;
+    public GameObject text;
+    bool isActivated = false;
 
     void Update()
     {
@@ -37,6 +39,7 @@ public class GameMenu : MonoBehaviour
         PlayerPrefs.SetFloat("X", playerMovement.transform.position.x);
         PlayerPrefs.SetFloat("Y", playerMovement.transform.position.y);
         PlayerPrefs.SetInt("Scene", SceneManager.GetActiveScene().buildIndex);
+        if (!isActivated) StartCoroutine(WaitCoroutine());
     }
 
     public void CancelButton() {
@@ -53,5 +56,14 @@ public class GameMenu : MonoBehaviour
         PlayerPrefs.SetInt("Scene", SceneManager.GetActiveScene().buildIndex);
         Debug.Log("Quit");
         Application.Quit();
+    }
+
+    IEnumerator WaitCoroutine()
+    {
+        isActivated = true;
+        text.SetActive(true);
+        yield return new WaitForSeconds(5);
+        text.SetActive(false);
+        isActivated = false;
     }
 }

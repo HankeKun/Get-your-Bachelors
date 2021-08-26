@@ -15,6 +15,7 @@ public class EnterStage2 : MonoBehaviour
     {
         if(playerInRange)
         {
+            PlayerPrefs.SetInt("Stage", 2);
             gridStage0.gameObject.SetActive(false);
             gridStage1.gameObject.SetActive(false);
             gridStage2.gameObject.SetActive(true);
