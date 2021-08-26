@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public GameObject yesNo;
     public VectorValue playerStorage;
     public void PlayGame()
     {
@@ -22,6 +23,19 @@ public class MainMenu : MonoBehaviour
             playerStorage.initialValue =  new Vector2(x, y);
             SceneManager.LoadScene(PlayerPrefs.GetInt("Scene", 2));
         }
+    }
+
+    public void ResetGame() {
+        yesNo.SetActive(true);
+    }
+
+    public void YesButton() {
+        PlayerPrefs.SetInt("Ended", 1);
+        yesNo.SetActive(false);
+    }
+
+    public void NoButton() {
+        yesNo.SetActive(false);
     }
 
     public void QuitGame()

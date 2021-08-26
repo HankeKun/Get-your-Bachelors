@@ -10,7 +10,6 @@ public class SecrMueller : MonoBehaviour
     public GameObject dialogBox;
     public PlayerMovement playerMovement;
     public TextMeshProUGUI text;
-    public DayNightValue dayNightValue;
 
     // Update is called once per frame
     void Update()
@@ -31,7 +30,7 @@ public class SecrMueller : MonoBehaviour
                     case int n when (n <= 5 && n >= 4):
                         FindObjectOfType<DialogManager>().StartDialogue(dialog2, dialogBox, keyEnter, text);
                         PlayerPrefs.SetInt("QuestState", (int) Player.PlayerQuestState.Quest5);
-                        dayNightValue.intensity = 0.5f;
+                        PlayerPrefs.SetFloat("DayNight", 0.5f);
                         break;
                     case int n when (n == 7 || n == 9 || n == 11 || n == 13 || n == 15 || n == 17):
                         FindObjectOfType<DialogManager>().StartDialogue(dialog1, dialogBox, keyEnter, text);
