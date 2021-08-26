@@ -62,7 +62,7 @@ public class SecrMeyer : MonoBehaviour
     }
 
     private string[] dialog1 = { "Hallo, du bist hier um deinen Studentenausweis zu holen, richtig? Hier ist er.",
-    "Deine Matrikelnummer ist die 202174. Viel Spaß beim studieren!",
+    "Deine Matrikelnummer ist die 202174. Viel Spaß beim Studieren!",
     "Informiere dich bei Sekretärin Müller was du nun tun solltest." };
 
     private string[] dialog2 = { "Hallo, ich glaube nicht das ich dir momentan behilflich sein kann. Komm zu einem späteren Zeitpunkt wieder" };

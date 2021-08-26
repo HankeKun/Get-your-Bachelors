@@ -97,7 +97,7 @@ public class SecrMueller : MonoBehaviour
 
     private string[] dialog3 = { "Hey, du bist also momentan im ersten Semester.",
     "Dann solltest du Professor Karl finden. Er unterrichtet Grundlagen der Informatik.",
-    "Du solltest ihn im Gebäude 2 Raum 2 finden." };
+    "Du solltest ihn im Gebäude 2 Raum 3 finden." };
 
     private string[] dialog4 = { "Hey, du bist also momentan im zweiten Semester.",
     "Dann solltest du Professor Lucky finden. Er unterrichtet Programmieren.",
