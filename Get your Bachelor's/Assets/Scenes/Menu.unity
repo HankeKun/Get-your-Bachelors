@@ -176,6 +176,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   yesNo: {fileID: 813201747}
   playerStorage: {fileID: 11400000, guid: 2127b1721b0a32e45b3b07cf58f89142, type: 2}
+  playButton: {fileID: 1104565093}
+  optionsButton: {fileID: 1192793965}
+  quitButton: {fileID: 1429429415}
 --- !u!1 &33833467
 GameObject:
   m_ObjectHideFlags: 0

@@ -54,8 +54,7 @@ public class GameMenu : MonoBehaviour
         PlayerPrefs.SetFloat("X", playerMovement.transform.position.x);
         PlayerPrefs.SetFloat("Y", playerMovement.transform.position.y);
         PlayerPrefs.SetInt("Scene", SceneManager.GetActiveScene().buildIndex);
-        Debug.Log("Quit");
-        Application.Quit();
+        FindObjectOfType<LevelLoader>().LoadNextLevel(0);
     }
 
     IEnumerator WaitCoroutine()

@@ -27,7 +27,6 @@ public class LevelLoader : MonoBehaviour
                 gridStage0.gameObject.SetActive(false);
                 gridStage2.gameObject.SetActive(true);
             }
-            PlayerPrefs.SetInt("Stage", 0);
         }
     }
     // Update is called once per frame
@@ -141,7 +140,6 @@ public class LevelLoader : MonoBehaviour
                 break;
         }
     }
-
     public void LoadNextLevel(int level)
     {
         StartCoroutine(LoadLevel(level));
