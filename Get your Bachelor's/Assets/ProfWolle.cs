@@ -31,8 +31,10 @@ public class ProfWolle : MonoBehaviour
                     case 14:
                         FindObjectOfType<DialogManager>().StartChoiceDialogue(dialog2, dialogBox, keyEnter, text, choiceBox);
                         break;
-                    case int n when (n >= 15):
+                    case int n when (n <= 17 && n >= 15):
                         FindObjectOfType<DialogManager>().StartDialogue(dialog3, dialogBox, keyEnter, text);
+                        break;
+                    case 18:
                         break;
                 }
                 dialogBox.SetActive(true);

@@ -31,8 +31,10 @@ public class ProfLucky : MonoBehaviour
                     case 8:
                         FindObjectOfType<DialogManager>().StartChoiceDialogue(dialog2, dialogBox, keyEnter, text, choiceBox);
                         break;
-                    case int n when (n >= 9):
+                    case int n when (n <= 17 && n >= 9):
                         FindObjectOfType<DialogManager>().StartDialogue(dialog3, dialogBox, keyEnter, text);
+                        break;
+                    case 18:
                         break;
                 }
                 dialogBox.SetActive(true);

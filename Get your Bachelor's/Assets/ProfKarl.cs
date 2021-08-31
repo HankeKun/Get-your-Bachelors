@@ -11,6 +11,7 @@ public class ProfKarl : MonoBehaviour
     public GameObject keyEnter;
     public TextMeshProUGUI text;
     public GameObject choiceBox;
+    public GameObject choiceBoxBachelor;
 
     // Update is called once per frame
     void Update()
@@ -31,8 +32,11 @@ public class ProfKarl : MonoBehaviour
                     case 6:
                         FindObjectOfType<DialogManager>().StartChoiceDialogue(dialog2, dialogBox, keyEnter, text, choiceBox);
                         break;
-                    case int n when (n >= 7):
+                    case int n when (n <= 17 && n >= 7):
                         FindObjectOfType<DialogManager>().StartDialogue(dialog3, dialogBox, keyEnter, text);
+                        break;
+                    case 18:
+                        FindObjectOfType<DialogManager>().StartChoiceDialogue(dialog5, dialogBox, keyEnter, text, choiceBoxBachelor);
                         break;
                 }
                 dialogBox.SetActive(true);
@@ -71,6 +75,13 @@ public class ProfKarl : MonoBehaviour
     private string[] dialog4 = { "Tut mir leid aber du hast die Prüfung nicht bestanden.",
     "Schau dir nochmal die Vorlesung an und komm wieder, wenn du bereit bist." };
 
+    private string[] dialog5 = { "Du willst also also deine Bachelorarbeit bei mir schreiben?." };
+
+    private string[] dialog6 = { "Das war wohl leider nichts mit dem Bachelor.",
+    "Da musst du wohl nochmal ran!" };
+
+    private string[] dialog7 = { "Glückwunsch! Damit hast du den Bachelor in Informatik." };
+
     public GameObject exam;
     public GameObject examPage2;
     public void StartExam()
@@ -96,6 +107,41 @@ public class ProfKarl : MonoBehaviour
             FindObjectOfType<DialogManager>().StartDialogue(dialog4, dialogBox, keyEnter, text);
         }
         
+        dialogBox.SetActive(true);
+        keyEnter.SetActive(false);
+        playerMovement.pState = PlayerState.interact;
+    }
+
+    public GameObject bachelorExamPage1;
+    public GameObject bachelorExamPage2;
+    public GameObject bachelorExamPage3;
+    public GameObject bachelorExamPage4;
+    public GameObject bachelorExamPage5;
+    public GameObject bachelorExamPage6;
+
+    public void StartBachelor() {
+        FindObjectOfType<DialogManager>().DisplayNextSentence();
+        playerMovement.pState = PlayerState.interact;
+        bachelorExamPage1.SetActive(true);
+    }
+
+    public void EndBachelor() {
+        bachelorExamPage1.SetActive(false);
+        bachelorExamPage2.SetActive(false);
+        bachelorExamPage3.SetActive(false);
+        bachelorExamPage4.SetActive(false);
+        bachelorExamPage5.SetActive(false);
+        bachelorExamPage6.SetActive(false);
+
+        if (FindObjectOfType<Bachelor>().IsBachelorPassed()) {
+            FindObjectOfType<DialogManager>().StartDialogue(dialog7, dialogBox, keyEnter, text);
+            PlayerPrefs.SetInt("Ended", 1);
+            // Load End Scene with End Picture and Button to MainMenu
+        }
+        else {
+            FindObjectOfType<DialogManager>().StartDialogue(dialog6, dialogBox, keyEnter, text);
+        }
+
         dialogBox.SetActive(true);
         keyEnter.SetActive(false);
         playerMovement.pState = PlayerState.interact;

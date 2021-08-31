@@ -31,8 +31,10 @@ public class ProfKreis : MonoBehaviour
                     case 16:
                         FindObjectOfType<DialogManager>().StartChoiceDialogue(dialog2, dialogBox, keyEnter, text, choiceBox);
                         break;
-                    case int n when (n >= 17):
+                    case 17:
                         FindObjectOfType<DialogManager>().StartDialogue(dialog3, dialogBox, keyEnter, text);
+                        break;
+                    case 18:
                         break;
                 }
                 dialogBox.SetActive(true);
