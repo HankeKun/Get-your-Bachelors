@@ -8823,7 +8823,6 @@ MonoBehaviour:
   keyEnter: {fileID: 563053430}
   text: {fileID: 1635323426}
   choiceBox: {fileID: 1585858779}
-  dayNightValue: {fileID: 11400000, guid: d3e182a48e35b27448b3db9d5c4a9579, type: 2}
   exam: {fileID: 614472542}
   examPage2: {fileID: 1377393405}
 --- !u!61 &598652147
