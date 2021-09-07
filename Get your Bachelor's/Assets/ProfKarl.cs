@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class ProfKarl : MonoBehaviour
@@ -22,7 +23,7 @@ public class ProfKarl : MonoBehaviour
             {
                 FindObjectOfType<DialogManager>().DisplayNextSentence();
                 if (PlayerPrefs.GetInt("Ended", 0) == 1) {
-                    // Game Enden lassen
+                    SceneManager.LoadScene(24);
                 }
             }
             else
