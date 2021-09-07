@@ -13368,7 +13368,6 @@ MonoBehaviour:
   keyEnter: {fileID: 1121007158}
   text: {fileID: 902064964}
   choiceBox: {fileID: 1191423655}
-  dayNightValue: {fileID: 11400000, guid: d3e182a48e35b27448b3db9d5c4a9579, type: 2}
   exam: {fileID: 1830970513}
   examPage2: {fileID: 756764742}
 --- !u!61 &1592252832

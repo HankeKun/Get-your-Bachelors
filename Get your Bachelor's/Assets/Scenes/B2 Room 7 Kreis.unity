@@ -12551,7 +12551,6 @@ MonoBehaviour:
   playerMovement: {fileID: 385037693}
   text: {fileID: 407388045}
   choiceBox: {fileID: 1215120503}
-  dayNightValue: {fileID: 11400000, guid: d3e182a48e35b27448b3db9d5c4a9579, type: 2}
   exam: {fileID: 682115593}
   examPage2: {fileID: 304801597}
 --- !u!1 &1274791929

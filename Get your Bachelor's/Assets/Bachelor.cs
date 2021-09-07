@@ -32,8 +32,34 @@ public class Bachelor : MonoBehaviour
         for (int i=0; i < toggleAufgabe2.Length; i++) {
             toggleAufgabe2[i].isOn = false;
         }
+        for (int i=0; i < inputAufgabe3a.Length; i++) {
+            inputAufgabe3a[i].text = "";
+        }
+        for (int i=0; i < inputAufgabe3b.Length; i++) {
+            inputAufgabe3b[i].text = "";
+        }
+        for (int i=0; i < inputAufgabe3c.Length; i++) {
+            inputAufgabe3c[i].text = "";
+        }
+        for (int i=0; i < inputAufgabe3d.Length; i++) {
+            inputAufgabe3d[i].text = "";
+        }
+        for (int i=0; i < inputAufgabe3e.Length; i++) {
+            inputAufgabe3e[i].text = "";
+        }
+        inputAufgabe3f.text = "";
+        for (int i=0; i < inputAufgabe4.Length; i++) {
+            inputAufgabe4[i].text = "";
+        }
+        for (int i=0; i < toggleAufgabe5r.Length; i++) {
+            toggleAufgabe5r[i].isOn = false;
+            toggleAufgabe5f[i].isOn = false;
+        }
+        for (int i=0; i < toggleAufgabe6.Length; i++) {
+            toggleAufgabe6[i].isOn = false;
+        }
 
-        return points >= 10.0;
+        return points >= 24.0;
     }
 
     public TextMeshProUGUI[] textAufgabe1a;
@@ -152,23 +178,43 @@ public class Bachelor : MonoBehaviour
         return points;
     }
 
+    public TMP_InputField[] inputAufgabe4;
     private double CheckExercise4()
     {
         double points = 0.0;
-
+        if (inputAufgabe4[0].text == "2070") points += 2.0;
+        if (inputAufgabe4[1].text == "5") points += 2.0;
+        if (inputAufgabe4[2].text == "1200") points += 2.0;
+        if (inputAufgabe4[3].text == "300") points += 2.0;
         return points;
     }
 
+    public Toggle[] toggleAufgabe5r; // right toggles
+    public Toggle[] toggleAufgabe5f; // false toggles
     private double CheckExercise5()
     {
         double points = 0.0;
 
+        if (toggleAufgabe5r[0].isOn) points += 1.0;
+        if (toggleAufgabe5r[1].isOn) points += 1.0;
+        if (toggleAufgabe5r[2].isOn) points += 1.0;
+        if (toggleAufgabe5r[3].isOn) points += 1.0;
+        if (toggleAufgabe5r[4].isOn) points += 1.0;
+        if (toggleAufgabe5r[5].isOn) points += 1.0;
+        if (toggleAufgabe5r[6].isOn) points += 1.0;
+        if (toggleAufgabe5r[7].isOn) points += 1.0;
+
         return points;
     }
 
+    public Toggle[] toggleAufgabe6;
     private double CheckExercise6()
     {
         double points = 0.0;
+
+        if (toggleAufgabe6[0].isOn) points += 3.0;
+        if (toggleAufgabe6[1].isOn) points += 3.0;
+        if (toggleAufgabe6[2].isOn) points += 2.0;
 
         return points;
     }

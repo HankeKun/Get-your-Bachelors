@@ -77,4 +77,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/B2 Room 8 Toilet.unity
     guid: 7464ef028e8e9ab45b2d1b332d285a2a
+  - enabled: 1
+    path: Assets/Scenes/End Scene.unity
+    guid: 6ec64bc81819a564e91e77aba9d3d54e
   m_configObjects: {}

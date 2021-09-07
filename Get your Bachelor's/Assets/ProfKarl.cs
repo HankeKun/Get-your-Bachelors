@@ -21,6 +21,9 @@ public class ProfKarl : MonoBehaviour
             if (dialogBox.activeInHierarchy)
             {
                 FindObjectOfType<DialogManager>().DisplayNextSentence();
+                if (PlayerPrefs.GetInt("Ended", 0) == 1) {
+                    // Game Enden lassen
+                }
             }
             else
             {
@@ -136,7 +139,6 @@ public class ProfKarl : MonoBehaviour
         if (FindObjectOfType<Bachelor>().IsBachelorPassed()) {
             FindObjectOfType<DialogManager>().StartDialogue(dialog7, dialogBox, keyEnter, text);
             PlayerPrefs.SetInt("Ended", 1);
-            // Load End Scene with End Picture and Button to MainMenu
         }
         else {
             FindObjectOfType<DialogManager>().StartDialogue(dialog6, dialogBox, keyEnter, text);
